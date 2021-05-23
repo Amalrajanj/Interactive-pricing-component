@@ -83,9 +83,28 @@ header {
   cursor: pointer;
 }
 
+.progress input::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-image: url("./images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-color: #10d5c2;
+  background-position: 50% 50%;
+  cursor: pointer;
+  border: none;
+}
+
 .progress input::-webkit-slider-thumb:hover {
   -webkit-box-shadow: 0px 0px 10px #10d5c2;
           box-shadow: 0px 0px 10px #10d5c2;
+}
+
+.progress input::-moz-range-thumb:hover {
+  box-shadow: 0px 0px 10px #10d5c2;
 }
 
 .page-views span {
